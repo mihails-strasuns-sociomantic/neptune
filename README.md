@@ -32,8 +32,22 @@ The following documents are available:
 Tools
 =====
 
-For now the repository only includes one
-[tool](https://github.com/sociomantic-tsunami/neptune/tree/master/src/overview)
-that fetches repositories for a selected GitHub organization and builds an HTML
+The repository includes:
+
+[Overview](https://github.com/sociomantic-tsunami/neptune/tree/master/src/overview)
+--------
+
+Fetches repositories for a selected GitHub organization and builds an HTML
 overview of applications and libraries that shows which version of each library
 is used in each application.
+
+
+[Release](https://github.com/sociomantic-tsunami/neptune/tree/master/src/release)
+-------
+
+Automates all the task required to do a semver abiding release, including some
+sanity checks. Task include:
+
+* Autodetection of what type of release is being done (major, minor, patch)
+* Merging of features and bugfixes into higher versions
+* Creation of releases, including their tags, releasenotes and github releases
